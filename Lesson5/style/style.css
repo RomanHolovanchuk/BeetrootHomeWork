@@ -1,0 +1,64 @@
+.full_page {
+  background-image: url(../assets/images/bg-page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 10px;
+  line-height: 18px;
+}
+.title {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.my_foto {
+  border-radius: 20px;
+}
+.my_profile {
+  border: dotted;
+  border-color: rgb(105, 105, 230);
+  width: 400px;
+}
+.title_small {
+  font-size: 16px;
+  color: #29fa33;
+  font-weight: bolder;
+}
+.my_project,
+.contact {
+  text-decoration: none;
+}
+.my_project:hover {
+  color: red;
+}
+.title_work {
+  font-size: 14px;
+  color: rgb(225, 0, 0);
+  font-weight: bolder;
+}
+.Education {
+  box-shadow: 5px 5px 10px #000;
+  width: 400px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.timeline {
+  font-style: italic;
+  opacity: 0.7;
+}
+.button_test1,
+.button2 {
+  background-color: #9c9c9c;
+}
+.button_test1:hover {
+  color: red;
+}
+.new {
+  display: none;
+}
+.button2:hover .old {
+  display: none;
+}
+.button2:hover .new {
+  display: inline;
+}
