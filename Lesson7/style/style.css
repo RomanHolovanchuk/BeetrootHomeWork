@@ -1,7 +1,6 @@
 .all_pages {
   width: 1920px;
   height: 937px;
-  overflow: scroll;
 }
 .language {
   display: inline-block;
@@ -13,6 +12,7 @@
   box-sizing: border-box;
   position: fixed;
   top: 0px;
+  left: 40px
 }
 .title_doc {
   display: inline-block;
@@ -21,7 +21,7 @@
   line-height: 23px;
   position: fixed;
   top: 0px;
-  left: 50px;
+  left: 90px;
   width: 100%;
   background-color: white;
   z-index: 6;
@@ -62,8 +62,10 @@
   font-size: 36px;
   line-height: 48px;
   width: 1160px;
-  left: 720px;
+  left: 700px;
   top: 121px;
+  height: 778px;
+  overflow-y: scroll;
 }
 .title_info {
   display: block;
@@ -88,106 +90,109 @@
   font-weight: 700;
   font-size: 36px;
 }
-.ussing {
+.ussing{
   font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  position: relative;
-  top: 143px;
+font-size: 36px;
+line-height: 42px;
+position: relative;
+    top: 143px;
 }
-.first_line {
+.first_line{
   margin-top: 214px;
   margin-bottom: 25px;
 }
-.brand {
+.brand{
   display: inline-block;
 }
-.fb {
+.fb{
   width: 440px;
   height: 280px;
   display: inline-block;
   background-image: url(../assets/images/facebookL.png);
+
 }
-.fb:hover {
+.fb:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/facebookB.png);
 }
-.insta {
+.insta{
   display: inline-block;
   width: 440px;
   height: 280px;
-  background-image: url("../assets/images/InstagramL.png");
+  background-image:url('../assets/images/InstagramL.png') ;
 }
-.insta:hover {
+.insta:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/InstagramB.png);
 }
-.shopi {
+.shopi{
   display: inline-block;
   width: 440px;
   height: 280px;
-  background-image: url(../assets/images/ShopifyL.png);
+  background-image:url(../assets/images/ShopifyL.png) ;
 }
-.shopi:hover {
+.shopi:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/ShopifyB.png);
 }
-.skype {
+.skype{
   display: inline-block;
   width: 440px;
   height: 280px;
-  background-image: url(../assets/images/SkypeL.png);
+  background-image:url(../assets/images/SkypeL.png) ;
 }
-.skype:hover {
+.skype:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/SkypeB.png);
 }
 
-.pinte {
+.pinte{
   width: 440px;
   height: 280px;
   display: inline-block;
   background-image: url(../assets/images/PinterestL.png);
+
 }
-.pinte:hover {
+.pinte:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/PinterestB.png);
 }
-.wix {
+.wix{
   display: inline-block;
   width: 440px;
   height: 280px;
-  background-image: url(../assets/images/WixL.png);
+  background-image:url(../assets/images/WixL.png) ;
 }
-.wix:hover {
+.wix:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/WixB.png);
 }
-.sales {
+.sales{
   display: inline-block;
   width: 440px;
   height: 280px;
-  background-image: url(../assets/images/SalesforceL.png);
+  background-image:url(../assets/images/SalesforceL.png) ;
 }
-.sales:hover {
+.sales:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/SalesforceB.png);
 }
-.sound {
+.sound{
   display: inline-block;
   width: 440px;
   height: 280px;
-  background-image: url(../assets/images/SoundcloudL.png);
+  background-image:url(../assets/images/SoundcloudL.png) ;
 }
-.sound:hover {
+.sound:hover{
   transform: rotateX(360deg);
   transition: ease-in-out 2s;
   background-image: url(../assets/images/SoundcloudB.png);
 }
+
