@@ -5,6 +5,7 @@
   padding-left: 10px;
   line-height: 18px;
 }
+
 .title {
   font-size: 30px;
   color: black;
@@ -14,11 +15,13 @@
 .my_foto {
   border-radius: 20px;
 }
+
 .my_profile {
   border: dotted;
   border-color: rgb(105, 105, 230);
   width: 400px;
 }
+
 .title_small {
   font-size: 16px;
   color: #29fa33;
