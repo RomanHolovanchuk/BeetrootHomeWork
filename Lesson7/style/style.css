@@ -1,6 +1,6 @@
 .all_pages {
-  width: 1920px;
   height: 937px;
+  overflow-y: scroll;
 }
 .language {
   display: inline-block;
@@ -32,7 +32,6 @@
   position: fixed;
   left: 1600px;
   top: 0px;
-
   z-index: 7;
 }
 
@@ -44,7 +43,9 @@
   line-height: 42px;
   letter-spacing: 0.04em;
   color: #000000;
-  position: absolute;
+  position: sticky;
+  bottom: 200px;
+
 }
 .nav_header {
   margin-top: 120px;
@@ -62,16 +63,17 @@
   font-size: 36px;
   line-height: 48px;
   width: 1160px;
-  left: 700px;
+  left: 120px;
   top: 121px;
   height: 778px;
-  overflow-y: scroll;
+
 }
 .title_info {
   display: block;
   font-weight: 900;
   font-size: 36px;
   margin-bottom: 50px;
+  scroll-margin-top: 91px;
 }
 .line {
   width: 80px;
