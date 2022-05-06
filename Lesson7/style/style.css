@@ -102,7 +102,6 @@ position: relative;
 .first_line{
   margin-top: 214px;
   margin-bottom: 25px;
-  display: flex;
 }
 .brand{
   display: inline-block;
@@ -110,7 +109,7 @@ position: relative;
 .fb{
   width: 440px;
   height: 280px;
-  display: flex;
+  display: inline-block;
   background-image: url(../assets/images/facebookL.png);
 
 }
