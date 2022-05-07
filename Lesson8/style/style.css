@@ -44,10 +44,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.fa-blender-phone {
-  color: green;
-  font-size: 30px;
-}
 .header_right {
   display: flex;
   align-items: center;
