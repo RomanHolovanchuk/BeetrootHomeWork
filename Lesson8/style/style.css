@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 @font-face {
   font-family: 'Roboto-Bold';
   src: url(../fonts/Roboto-Bold.ttf) format(‘truetype’);
@@ -26,13 +26,13 @@ body {
   color: #544837;
   background-color: #f2f2f2;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .all_page {
   max-width: 1400px;
-  min-height: 100%;
-  overflow: hidden;
+  min-height: 100%; /* висоту можемо не задавати і значення буде auto (але якщо треба мінімальну, то краще 100vh) */
+  overflow: hidden; /* ця властивість тут лишня */
   background-color: #f2f2f2;
   padding: 0 145px 0 145px;
   margin: 0 auto;
@@ -97,6 +97,7 @@ body {
   transform: scale(1.2);
   text-decoration: underline;
   cursor: pointer;
+  /* можна було б написати через кому цей селектор після .header_button_one:hover, щоб стилі не дублювати */
 }
 main {
   flex: 1 1 auto;
@@ -158,6 +159,7 @@ main {
   transform: scale(1.2);
   cursor: pointer;
   text-decoration: underline;
+  /* знову дублювання стилів, як і з кнопками */
 }
 .first_section_img {
   transform: translateX(20px);
@@ -229,7 +231,7 @@ main {
   color: #2f281e;
   margin-top: 137px;
   margin-bottom: 71px;
-  font-family:'Roboto-Bold';
+  font-family: 'Roboto-Bold';
 }
 
 .colons_second_section {
@@ -268,6 +270,7 @@ main {
   transform: scale(1.2);
   text-decoration: underline;
   cursor: pointer;
+  /* знов дублювання */
 }
 .third_section {
   display: flex;
@@ -405,4 +408,5 @@ main {
   transform: scale(1.2);
   text-decoration: underline;
   cursor: pointer;
+  /* дублювання */
 }
