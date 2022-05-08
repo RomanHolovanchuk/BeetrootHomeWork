@@ -38,8 +38,6 @@ body {
 
 .all_page {
   max-width: 1445px;
-  min-height: 100%;
-  overflow: hidden;
   margin: 0 auto;
 }
 .header {
