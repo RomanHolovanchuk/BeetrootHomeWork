@@ -1,10 +1,10 @@
 @font-face {
   font-family: "GilRoy-Bold";
-  src: url(../fonts/Gilroy-Bold.ttf) format(‘truetype’);
+  src: url(../fonts/Gilroy-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: "GilRoyMedium";
-  src: url(../fonts/Gilroy-Medium.ttf) format(‘truetype’);
+  src: url(../fonts/Gilroy-Medium.ttf) format('truetype');
 }
 *,
 h1,
@@ -34,11 +34,14 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+ 
 }
+
 
 .all_page {
   max-width: 1445px;
   margin: 0 auto;
+  padding-bottom: 123px;
 }
 .header {
   height: 87px;
