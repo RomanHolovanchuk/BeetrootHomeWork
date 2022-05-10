@@ -1,9 +1,10 @@
+/* TODO чомусь шрифти не підтягнулись, в дизайні інші */
 @font-face {
-  font-family: "GilRoy-Bold";
+  font-family: 'GilRoy-Bold';
   src: url(../fonts/Gilroy-Bold.ttf) format(‘truetype’);
 }
 @font-face {
-  font-family: "GilRoyMedium";
+  font-family: 'GilRoyMedium';
   src: url(../fonts/Gilroy-Medium.ttf) format(‘truetype’);
 }
 *,
@@ -30,7 +31,7 @@ body {
   height: 100%;
   line-height: 1;
   align-items: center;
-  font-family: "GilRoyMedium";
+  font-family: 'GilRoyMedium';
   font-size: 18px;
   line-height: 22px;
   text-align: center;
@@ -72,7 +73,8 @@ body {
 .section1_title {
   width: 123px;
   height: 118px;
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
+  /* TODO на те, що після коми у розмірах можна не звертати увагу. Це провтик дизайнера, ніхто так розміри не задає */
   font-size: 47.3392px;
   line-height: 59px;
 }
@@ -82,7 +84,7 @@ body {
   height: 44px;
 }
 .section1_lang {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-size: 16px;
   line-height: 20px;
   transform: rotate(-90deg) translateX(-37px);
@@ -105,7 +107,7 @@ body {
   height: 506px;
 }
 .title {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-weight: 400;
   font-size: 34px;
   line-height: 42px;
