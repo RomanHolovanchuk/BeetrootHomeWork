@@ -1,11 +1,11 @@
 /* TODO чомусь шрифти не підтягнулись, в дизайні інші */
 @font-face {
-  font-family: 'GilRoy-Bold';
-  src: url(../fonts/Gilroy-Bold.ttf) format(‘truetype’);
+  font-family: "GilRoy-Bold";
+  src: url(../fonts/Gilroy-Bold.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'GilRoyMedium';
-  src: url(../fonts/Gilroy-Medium.ttf) format(‘truetype’);
+  font-family: "GilRoyMedium";
+  src: url(../fonts/Gilroy-Medium.ttf) format('truetype');
 }
 *,
 h1,
@@ -35,11 +35,14 @@ body {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+ 
 }
+
 
 .all_page {
   max-width: 1445px;
   margin: 0 auto;
+  padding-bottom: 123px;
 }
 .header {
   height: 87px;
@@ -73,9 +76,8 @@ body {
 .section1_title {
   width: 123px;
   height: 118px;
-  font-family: 'Gilroy-Bold';
-  /* TODO на те, що після коми у розмірах можна не звертати увагу. Це провтик дизайнера, ніхто так розміри не задає */
-  font-size: 47.3392px;
+  font-family: "Gilroy-Bold";
+  font-size: 47px;
   line-height: 59px;
 }
 .section1_text {
