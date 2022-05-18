@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/normalize.css" />
     <link rel="stylesheet" href="./style/style.css" />
-    <title>Lesson9</title>
+
+    <title>Lesson11</title>
   </head>
   <body>
     <div class="all_page">
@@ -22,16 +23,31 @@
               <li class="ul_list_li">Contacts</li>
             </ul>
           </div>
+          <div class="burger_section">
+            <img
+              src="./assets/images/burger.svg"
+              alt="burger_menu"
+              class="burger_menu"
+              id="burger"
+            />
+          </div>
         </div>
       </header>
-      <main>
-        <div class="burger_section">
-          <img
-            src="./assets/images/burger.svg"
-            alt="burger_menu"
-            class="burger_menu"
-          />
+      <div class="burger_mobile" id="mobile-menu">
+        <ul class="ul_list_items_mobile">
+          <li class="ul_list_li home">Home</li>
+          <li class="ul_list_li">About me</li>
+          <li class="ul_list_li">Skills</li>
+          <li class="ul_list_li">Portfolio</li>
+          <li class="ul_list_li">Contacts</li>
+        </ul>
+        <div class="close_icon" id="close">
+          <img src="./assets/images/close.svg" alt="close" />
         </div>
+        <p class="section1_lang_mobile"><span class="ru">RU</span> | EN</p>
+      </div>
+
+      <main>
         <section class="section_one">
           <h1 class="section1_title">Denis Novik</h1>
           <p class="section1_text">UX | UI designer 24 years old, Minsk</p>
@@ -164,5 +180,6 @@
         </p>
       </footer>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
