@@ -1,122 +1,340 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Roboto&display=swap");
-@import '__nullstyle';
+@import "_font-face";
+@import "_nullstyle";
+@import "_colors";
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin fontz($fs, $lh, $ff) {
+  font-size: $fs;
+  line-height: $lh;
+  font-family: $ff;
+}
+
 html,
 body {
-  height: 4329px;
-  font-family: "Roboto", sans-serif;
+  height: 100%;
+  line-height: 1;
+  align-items: center;
+  text-align: center;
+  @include fontz(18px, 22px, "GilRoyMedium");
+  //   font-size: 18px;
+  //   line-height: 22px;
+  //   font-family: "GilRoyMedium";
 }
 
 .all_page {
-  max-width: 1445px;
+  max-width: 1447px;
   margin: 0 auto;
-  color: #16133d;
+  padding: 30px 250px 123px 250px;
+  @media screen and (max-width: 1200px) {
+    padding: 39px 80px 120px 80px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 39px 100px 100px 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 15px 30px 50px 30px;
+  }
 }
 .header {
-  height: 118px;
-  margin: 38px 126px 55px 156px;
-  border-bottom: 1px solid #efeef3;
-  margin-bottom: 55px;
-}
-.main_page {
-  padding: 38px 127px 0px 146px;
-}
-.logo_clover {
-  fill: none;
-}
-.logo_text {
-  fill: black;
-}
-.logo_text2 {
-  fill: #f2f2f2;
+  height: 87px;
+  .ul_list_items {
+    @extend %flex-between;
+    //   display: flex;
+    //   justify-content: space-between;
+    padding-bottom: 33px;
+    border-bottom: 1px solid $gray;
+    .ul_list_li {
+      font-weight: 400;
+      color: $gray;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .home {
+      color: $black;
+    }
+    @media screen and (max-width: 1024px) {
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
 }
 
-.service {
-  line-height: 21px;
-  color: #7690a8;
+.section_one {
+  @extend %flex-between;
+  //   display: flex;
+  //   justify-content: space-between;
+  // padding: 39px 276px 0 240px;
+  .section1_title {
+    width: 123px;
+    height: 118px;
+    @include fontz(47px, 59px, "GilRoy-Bold");
+    //  font-family: "Gilroy-Bold";
+    //   font-size: 47px;
+    //   line-height: 59px;
+  }
+  .section1_text {
+    align-self: flex-end;
+    width: 155px;
+    height: 44px;
+    @media screen and (max-width: 600px) {
+      padding: 23px 0px 37px 0;
+    }
+  }
+
+  .section1_lang {
+    @include fontz(16px, 20px, "GilRoy-Bold");
+    //   font-family: "Gilroy-Bold";
+    //   font-size: 16px;
+    //   line-height: 20px;
+    transform: rotate(-90deg) translateX(-37px);
+    display: flex;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+    span {
+      color: $gray;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
-.svg_icons:hover .icon_test {
-  fill: red;
-}
-.title {
-  font-family: "Nunito Sans";
-  font-size: 40px;
-  line-height: 52px;
-  letter-spacing: 0.2px;
-  margin-top: 17px;
-  margin-bottom: 35px;
-}
-.title_second {
-  font-size: 24px;
-  line-height: 21px;
-  letter-spacing: 0.2px;
-}
-.text_info {
-  line-height: 28px;
-}
-.conteiner {
+.burger_section {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  transform: translateY(40px);
 }
-.block {
-  width: 360px;
-  height: 347px;
-  border: 1px solid #e5eaf4;
-  border-radius: 8px;
-  padding: 41px 45px 46px 41px;
+.burger_menu {
+  @media screen and (min-width: 601px) {
+    display: none;
+  }
+}
+.burger_mobile {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
   display: flex;
+  text-align: start;
+  display: none;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  padding: 65px 0 0px 26px;
+  column-gap: 50px;
+
+  @media screen and (min-width: 601px) {
+    display: none;
+  }
+  li {
+    @include fontz(34px, 20px, "GilRoy-Bold");
+    height: 88px;
+    color: $gray;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .home {
+    color: $black;
+  }
+}
+.close_icon {
+  position: absolute;
+  top: 48px;
+  right: 36px;
+}
+.section1_lang_mobile {
+  @include fontz(36px, 20px, "GilRoy-Bold");
+  //   font-family: "Gilroy-Bold";
+  //   font-size: 16px;
+  //   line-height: 20px;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  right: 0px;
+  bottom: 65px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    color: $gray;
+  }
+}
+.foto_one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.foto {
+  margin-top: 50px;
+  padding-bottom: 104px;
+  width: 100%;
+
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.foto_mobile {
+  display: none;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    padding: 36px 0 80px 0;
+  }
+}
+.section2 {
+  background-color: $light_gray;
+  max-width: 1445px;
+  height: 506px;
+  .title2 {
+    padding-top: 120px;
+    padding-bottom: 18px;
+    @media screen and (max-width: 600px) {
+      padding-top: 81px;
+      padding-bottom: 30px;
+    }
+  }
+}
+.info {
+  @extend %flex-between;
+  //   display: flex;
+  //   justify-content: space-between;
   flex-direction: column;
-  justify-content: space-between;
-}
-.block:hover {
-  border: 1px solid #3db370;
-}
-.svg_icons {
-  border: 1px solid rgba(21, 101, 216, 0.1);
-  border-radius: 16px;
-  width: 64px;
-  height: 64px;
-  align-items: center;
-  padding: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-/*------------footer */
-.footer_page {
-  width: 1440px;
-  height: 194px;
-  background: #16133d;
-  margin-top: 69px;
-}
-.logo2 {
-  padding: 36px 0 40px 156px;
-}
-.social {
-  display: flex;
-  justify-content: space-between;
-  width: 225px;
-}
-.linku_social {
-  padding-left: 161px;
-}
-.block_link {
-  width: 38px;
-  height: 38px;
-  border: 1px solid #e5eaf4;
-  border-radius: 6px;
-  background: #efeef3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social__icon {
-  width: 20px;
-  height: 20px;
-  display: block;
-}
-.block_link use {
-  fill: black;
+  max-width: 485px;
+  height: 218px;
+  margin: 0 auto;
 }
 
-.block_link:hover use {
-  fill: #3db370;
+.title {
+  @include fontz(34px, 42px, "GilRoy-Bold");
+  text-align: center;
+  //   font-family: "Gilroy-Bold";
+  //   font-size: 34px;
+  //   line-height: 42px;
+}
+
+.center {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.title3 {
+  margin-top: 91px;
+  margin-bottom: 70px;
+}
+.section3_icon_full {
+  @extend %flex-between;
+  margin-top: 83px;
+  margin-bottom: 110px;
+  @media screen and (max-width: 1024px) {
+  }
+  img {
+    width: 7.7vw;
+    @media screen and (max-width: 600px) {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.section3_p1 {
+  @include fontz(14px, 17px, "GilRoyMedium");
+  //   font-size: 14px;
+  //   line-height: 18px;
+  width: 70px;
+  height: 27px;
+  text-align: center;
+  color: $gray;
+  margin: 24px auto 40px;
+}
+.section4 {
+  background: $light_gray;
+  margin: 110px auto;
+  img {
+    width: 80%;
+    @media screen and (max-width: 992px) {
+    }
+
+    @media screen and (max-width: 500px) {
+    }
+  }
+  .title4 {
+    padding: 110px 0 47px;
+  }
+  .title_underline {
+    @include fontz(18px, 22px, "GilRoyMedium");
+    //    font-size: 18px;
+    //   line-height: 22px;
+    text-decoration-line: underline;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+/*------------footer */
+
+.linku_social {
+  @extend %flex-between;
+  //   display: flex;
+  //   justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.img_link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  box-shadow: 10px 5px 5px rgb(116, 104, 104);
+  transition: all 0.5s ease-out;
+}
+.footer_text {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.footer_button {
+  width: 180px;
+  height: 42px;
+  background-color: $black;
+  color: $white;
+  border-radius: 32px;
+  margin-bottom: 92px;
+  &:hover {
+    background-color: $white;
+    color: $black;
+    border: solid;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.footer_p {
+  @include fontz(14px, 17px, "GilRoyMedium");
+  margin-top: 45px;
+  color: $gray;
+  //   font-size: 14px;
+  //   line-height: 17px;
 }
