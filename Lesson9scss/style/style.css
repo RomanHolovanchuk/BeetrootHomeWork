@@ -3,10 +3,12 @@
   font-family: "GilRoy-Bold";
   src: url(../fonts/Gilroy-Bold.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "GilRoyMedium";
   src: url(../fonts/Gilroy-Medium.ttf) format("truetype");
 }
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -15,7 +17,8 @@
 }
 
 *, *:before, *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :focus, :active {
@@ -55,16 +58,21 @@ h1 {
   padding: 0;
 }
 
-.linku_social, .section3_icon_full, .info, .section_one, .header .ul_list_items {
+.header .ul_list_items, .section_one, .info, .section3_icon_full, .linku_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   line-height: 1;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   font-size: 18px;
   line-height: 22px;
@@ -76,16 +84,19 @@ body {
   margin: 0 auto;
   padding: 30px 250px 123px 250px;
 }
+
 @media screen and (max-width: 1200px) {
   .all_page {
     padding: 39px 80px 120px 80px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .all_page {
     padding: 39px 100px 100px 100px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .all_page {
     padding: 15px 30px 50px 30px;
@@ -95,21 +106,26 @@ body {
 .header {
   height: 87px;
 }
+
 .header .ul_list_items {
   padding-bottom: 33px;
   border-bottom: 1px solid #828282;
 }
+
 .header .ul_list_items .ul_list_li {
   font-weight: 400;
   color: #828282;
 }
+
 .header .ul_list_items .ul_list_li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .header .ul_list_items .home {
   color: black;
 }
+
 @media screen and (max-width: 600px) {
   .header {
     display: none;
@@ -123,48 +139,73 @@ body {
   line-height: 59px;
   font-family: "GilRoy-Bold";
 }
+
 .section_one .section1_text {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 155px;
   height: 44px;
 }
+
 @media screen and (max-width: 600px) {
   .section_one .section1_text {
     padding: 23px 0px 37px 0;
   }
 }
+
 .section_one .section1_lang {
   font-size: 16px;
   line-height: 20px;
   font-family: "GilRoy-Bold";
-  transform: rotate(-90deg) translateX(-37px);
+  -webkit-transform: rotate(-90deg) translateX(-37px);
+          transform: rotate(-90deg) translateX(-37px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .section_one .section1_lang:hover {
   cursor: pointer;
 }
+
 .section_one .section1_lang span {
   color: #828282;
 }
+
 @media screen and (max-width: 600px) {
   .section_one .section1_lang {
     display: none;
   }
 }
+
 @media screen and (max-width: 600px) {
   .section_one {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .burger_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  transform: translateY(40px);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
 }
 
 @media screen and (min-width: 601px) {
@@ -175,8 +216,12 @@ body {
 
 .foto_one {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .foto {
@@ -184,6 +229,7 @@ body {
   padding-bottom: 104px;
   width: 100%;
 }
+
 @media screen and (max-width: 600px) {
   .foto {
     display: none;
@@ -193,8 +239,11 @@ body {
 .foto_mobile {
   display: none;
 }
+
 @media screen and (max-width: 600px) {
   .foto_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 36px 0 80px 0;
   }
@@ -205,10 +254,12 @@ body {
   max-width: 1445px;
   height: 506px;
 }
+
 .section2 .title2 {
   padding-top: 120px;
   padding-bottom: 18px;
 }
+
 @media screen and (max-width: 600px) {
   .section2 .title2 {
     padding-top: 81px;
@@ -217,7 +268,10 @@ body {
 }
 
 .info {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 485px;
   height: 218px;
   margin: 0 auto;
@@ -244,11 +298,17 @@ body {
   margin-top: 83px;
   margin-bottom: 110px;
 }
+
 @media screen and (max-width: 600px) {
   .section3_icon_full {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -267,17 +327,21 @@ body {
   background: #f6f6f6;
   margin: 110px auto;
 }
+
 .section4 img {
   width: 80%;
 }
+
 .section4 .title4 {
   padding: 110px 0 47px;
 }
+
 .section4 .title_underline {
   font-size: 18px;
   line-height: 22px;
   font-family: "GilRoyMedium";
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin-top: 45px;
   margin-bottom: 100px;
   padding-bottom: 80px;
@@ -292,7 +356,9 @@ body {
 .img_link:hover {
   text-decoration: underline;
   cursor: pointer;
-  box-shadow: 10px 5px 5px rgb(116, 104, 104);
+  -webkit-box-shadow: 10px 5px 5px #746868;
+          box-shadow: 10px 5px 5px #746868;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
@@ -309,11 +375,13 @@ body {
   border-radius: 32px;
   margin-bottom: 92px;
 }
+
 .footer_button:hover {
   background-color: white;
   color: black;
   border: solid;
 }
+
 @media screen and (max-width: 600px) {
   .footer_button {
     width: 100%;
@@ -327,5 +395,4 @@ body {
   margin-top: 45px;
   color: #828282;
 }
-
 /*# sourceMappingURL=style.css.map */
