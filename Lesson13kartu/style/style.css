@@ -1,0 +1,234 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid_container {
+  display: -ms-grid;
+  display: grid;
+  max-width: 600px;
+  -ms-grid-columns: (minmax(0px, 200px))[4];
+      grid-template-columns: repeat(4, minmax(0px, 200px));
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin: 5px;
+}
+
+.card:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.tyz {
+  -webkit-animation: turn-tyz 7s infinite;
+          animation: turn-tyz 7s infinite;
+}
+
+.dama4 {
+  -webkit-animation: turn-dama4 7s infinite 1s;
+          animation: turn-dama4 7s infinite 1s;
+}
+
+.damax {
+  -webkit-animation: turn-damax 7s infinite 2s;
+          animation: turn-damax 7s infinite 2s;
+}
+
+.valet {
+  -webkit-animation: turn-valet 7s infinite 3s;
+          animation: turn-valet 7s infinite 3s;
+}
+
+.nine {
+  -webkit-animation: turn-nine 7s infinite 4s;
+          animation: turn-nine 7s infinite 4s;
+}
+
+.seven {
+  -webkit-animation: turn-seven 7s infinite 5s;
+          animation: turn-seven 7s infinite 5s;
+}
+
+.five {
+  -webkit-animation: turn-five 7s infinite 6s;
+          animation: turn-five 7s infinite 6s;
+}
+
+.joker {
+  -webkit-animation: turn-joker 7s infinite 7s;
+          animation: turn-joker 7s infinite 7s;
+}
+
+@-webkit-keyframes turn-tyz {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/tyz.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-tyz {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/tyz.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-dama4 {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/dama4.png);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-dama4 {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/dama4.png);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-damax {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/damaxrest.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-damax {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/damaxrest.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-valet {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/valet.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-valet {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/valet.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-nine {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/nine.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-nine {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/nine.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-seven {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/seven.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-seven {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/seven.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-five {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/five.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-five {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/five.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes turn-joker {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/joker.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes turn-joker {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    content: url(../assets/images/joker.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

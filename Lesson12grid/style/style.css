@@ -178,5 +178,6 @@ body {
   grid-area: footer;
   height: 70px;
   text-align: center;
+  display: inline-g;
 }
 /*# sourceMappingURL=style.css.map */
