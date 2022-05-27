@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid_container {
+  display: grid;
+  max-width: 600px;
+  grid-template-columns: repeat(4, minmax(0px, 200px));
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin: 5px;
+}
+
+.card:hover {
+  animation-play-state: paused;
+}
+
+.tyz {
+  animation: turn-tyz 7s infinite;
+}
+
+.dama4 {
+  animation: turn-dama4 7s infinite 1s;
+}
+
+.damax {
+  animation: turn-damax 7s infinite 2s;
+}
+
+.valet {
+  animation: turn-valet 7s infinite 3s;
+}
+
+.nine {
+  animation: turn-nine 7s infinite 4s;
+}
+
+.seven {
+  animation: turn-seven 7s infinite 5s;
+}
+.five {
+  animation: turn-five 7s infinite 6s;
+}
+.joker {
+  animation: turn-joker 7s infinite 7s;
+}
+
+@keyframes turn-tyz {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/tyz.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-dama4 {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/dama4.png);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-damax {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/damaxrest.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-valet {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/valet.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-nine {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/nine.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-seven {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/seven.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-five {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/five.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes turn-joker {
+  50% {
+    transform: rotateY(360deg);
+    content: url(../assets/images/joker.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
