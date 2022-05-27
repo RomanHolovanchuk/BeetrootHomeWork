@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>forms</title>
+</head>
+<body>
+      <div class="wraper">
+          <div class="left_content">
+              <h1 class="title">Create an Account</h1>
+              <form action="#">
+                <label class="label" for="fname">First name:</label> 
+                <label class="label" for="lname">Last name:</label> <br />
+                <input type="text" id="fname" class="small_input" name="fname"/>
+                <input type="text" id="lname" name="lname" class="small_input" /><br />
+                <label class="label" for="email">Email:</label><br />
+                <input type="text" id="email" name="email" class="big_input" /><br />
+                <p class="email_info">We'll never share your email with anyone else.</p>
+                <input type="radio" name="info" /> Male
+                <input type="radio" name="info" />Female <br />
+                <!-- <input type="submit" value="Відправити" /> <br /> -->
+                <label class="label" for="select">Country</label>
+                <label class="label" for="City">City</label> <br>
+                <select name="Country" id="Country" class="small_input" >
+                    
+                    <option value="select">Select</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="uSA">USA</option>
+                    <option value="germany">germany</option>
+                </select>
+                <input type="text" id="City" name="City" class="small_input"/><br />
+              </form>
+          </div>
+          <div class="right_content"></div>
+      </div>  
+</body>
+</html>
