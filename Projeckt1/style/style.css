@@ -90,6 +90,10 @@ h1 {
   src: url("../fonts/HelveticaBold.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header, .section_one, .footer_top, .top_right, .footer_bootom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,6 +108,7 @@ h1 {
   color: #212353;
   max-width: 1600px;
   padding: 50px 240px 96px 240px;
+  margin: 0 auto;
 }
 
 .header {
