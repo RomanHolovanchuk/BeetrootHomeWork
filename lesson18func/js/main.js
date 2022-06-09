@@ -33,7 +33,7 @@
 // let b = +prompt("числo 2");
 // let c = +prompt("числo 3");
 // function str(a, b, c) {
-//     return String(a) + String(b)2 + String(c);
+//     return String(a) + String(b) + String(c);
 // }
 // console.log(str(a, b, c));
 
@@ -44,6 +44,7 @@
 
 // function square(a, b) {
 //   if (b === 0) return a * a;
+//   else if (a === 0) return b * b;
 //   else return a * b;
 // }
 // console.log(square(a, b));
@@ -53,13 +54,13 @@
 // let number = +prompt("Введіть число");
 // function perfect(number) {
 //   let temp = 0;
-//   for (i = 1; i <= number / 2; i++) {
+//   for (i = 1; i < number; i++) {
 //     if (number % i === 0) {
 //       temp += i;
 //     }
 //   }
 
-//   if (temp === number && temp !== 0) {
+//   if (temp === number) {
 //     console.log(`${number} - досконале число`);
 //   } else {
 //     console.log(`${number} - не досконале число`);
@@ -77,13 +78,13 @@
 // }
 // function perfect(number) {
 //   let temp = 0;
-//   for (i = 1; i <= number / 2; i++) {
+//   for (i = 1; i < number; i++) {
 //     if (number % i === 0) {
 //       temp += i;
 //     }
 //   }
 
-//   if (temp === number && temp !== 0) {
+//   if (temp === number) {
 //     return true;
 //   } else {
 //     return false;
