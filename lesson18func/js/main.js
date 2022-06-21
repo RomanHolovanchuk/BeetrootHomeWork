@@ -73,7 +73,7 @@
 // let start = +prompt("початок діапазону");
 // let finish = +prompt("кінець діапазону");
 
-// for (start; start < finish; start++) {
+// for (start; start <= finish; start++) {
 //   if (perfect(start) === true) console.log(`дане число є досконалим ${start}`);
 // }
 // function perfect(number) {
