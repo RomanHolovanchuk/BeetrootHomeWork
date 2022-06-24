@@ -1,0 +1,46 @@
+// @import "_nullstyle";
+@import "__font-face";
+@import "__colors";
+
+@mixin fontz($ff, $fs, $lh) {
+  font-family: $ff;
+  font-size: $fs;
+  line-height: $lh;
+}
+html {
+  scroll-behavior: smooth;
+}
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+#btn {
+  margin: 20px;
+}
+.svitlofor{
+  background-color: rgb(208, 155, 224);
+  margin: 10px;
+  border-radius: 10px;
+}
+span {
+font-size: 20px;
+font-weight: 900;
+
+}
+.modal {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  position: relative;
+}
+.closeBtn {
+  margin: 10px;
+  border-radius: 5px;
+}
+div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(202, 202, 202);
+}
