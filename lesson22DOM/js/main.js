@@ -40,11 +40,19 @@ let playList = [
   },
 ];
 const createList = document.querySelector(".listItem");
-for (let i = 0; i < playList.length; i++) {
+// for (let i = 0; i < playList.length; i++) {
+//   const list = document.createElement("li");
+//   createList.appendChild(list);
+//   list.innerHTML = `Група - <b>${playList[i].author}</b> пісня - <i>${playList[i].song}</i>`;
+// }
+
+playList.map((item) => {
   const list = document.createElement("li");
-  createList.appendChild(list);
-  list.innerHTML = `Група - <b>${playList[i].author}</b> пісня - <i>${playList[i].song}</i>`;
-}
+    createList.appendChild(list);
+    list.innerHTML = `Група - <b>${item.author}</b> пісня - <i>${item.song}</i>`;
+})
+
+
 
 const btn = document.getElementById("btn");
 const svitlofor = document.getElementById("svitlofor");
@@ -82,6 +90,7 @@ btnSvitlofor.addEventListener("click", () => {
     yellow.style.backgroundColor = "rgb(202, 202, 202)";
     red.style.backgroundColor = "rgb(202, 202, 202)";
     green.style.backgroundColor = "green";
+
   } else if (color === 3) {
     red.style.backgroundColor = "red";
     green.style.backgroundColor = "rgb(202, 202, 202)";

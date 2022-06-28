@@ -1,0 +1,22 @@
+// @import "_nullstyle";
+@import "__font-face";
+@import "__colors";
+
+@mixin fontz($ff, $fs, $lh) {
+  font-family: $ff;
+  font-size: $fs;
+  line-height: $lh;
+}
+html {
+  scroll-behavior: smooth;
+}
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+#textEdit{
+  display: none;
+}
+.table{
+  border: 1px solid;
+}
