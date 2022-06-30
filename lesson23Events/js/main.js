@@ -133,3 +133,25 @@ th5.addEventListener("click", () => {
 // });
 
 
+const bigSq = document.querySelector(".square");
+const littleSq = document.querySelector(".little-square");
+
+bigSq.addEventListener("mousedown", (Event) => {
+  const goMouseMove = (Event) => {
+    let newX = Event.clientX;
+    let newY = Event.clientY;
+    bigSq.style.width = newX + "px";
+    bigSq.style.height = newY + "px";
+    console.log(newX, newY);
+  };
+  if (Event.target.closest(".little-square")) {
+    document.addEventListener("mousemove", goMouseMove);
+  }
+  const stopMousemove = () => {
+    document.removeEventListener("mousemove", goMouseMove);
+  };
+  
+  document.addEventListener("mouseup", stopMousemove);
+});
+
+

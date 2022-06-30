@@ -14,9 +14,31 @@ html {
   display: flex;
   justify-content: space-between;
 }
-#textEdit{
+#textEdit {
   display: none;
 }
-.table{
+.table {
   border: 1px solid;
+}
+.textReview {
+  white-space: pre;
+}
+.square {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.little-square {
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  cursor: nwse-resize;
+  width: 10px;
+  height: 10px;
 }
