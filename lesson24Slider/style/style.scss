@@ -1,0 +1,193 @@
+@import "_nullstyle";
+@import "__font-face";
+@import "__colors";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,600&display=swap');
+@mixin fontz($ff, $fs, $lh) {
+  font-family: $ff;
+  font-size: $fs;
+  line-height: $lh;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  width: 1400px;
+  margin: 0 auto;
+}
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.slick-container-fon{
+  max-width: 1400px;
+  position: relative;
+  
+}
+.fon1{
+  position: relative;
+}
+.slick-container-fon .slick-dots li button:before {
+  content: none;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 15px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-container-fon .slick-dots button {
+  position: absolute;
+  bottom: 70px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(248, 241, 234, 0.7);
+}
+.slick-container-fon .slick-dots .slick-active button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F16A50;
+  
+}
+.slide-content{
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: 400px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.text-content{
+  color: $brown-light;
+  font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+text-align: center;
+text-transform: uppercase;
+width: 400px;
+height: 110px;
+
+}
+.button-fon{
+  font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+padding: 15px 57px;
+height: 52px;
+border: 2px solid $brown-light;
+z-index: 1000;
+background-color: transparent;
+&:hover {
+  background-color: $tomato-light;
+  border: none;
+  cursor: pointer;
+}
+}
+.title{
+  font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+
+}
+.stock, .stock2, .stocking{
+  font-weight: 500;
+font-size: 10px;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+color: $brown-light;
+width: 60px;
+height: 20px;
+background: $tomato-light;
+position: absolute;
+top: 0;
+display: block;
+cursor: pointer;
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sold, .sold2, .solding{
+  display: none;
+  font-weight: 500;
+font-size: 15px;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+color: black;
+width: 60px;
+height: 20px;
+border: 1px solid;
+background: transparent;
+position: absolute;
+top: 0;
+cursor: pointer;
+justify-content: space-around;
+align-items: center;
+}
+.slick-prev:before {
+  content: url(../assets/images/prev.svg);
+}
+
+.slick-next:before {
+  content: url(../assets/images/next.svg);
+}
+// .slick-prev:before:hover{    - -   - - 
+//   content: url(../assets/images/next-active.svg);
+// }
+.product{
+  padding-left: 40px;
+}
+.name-product{
+  font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+width: 204px;
+height: 40px;
+}
+.price{
+  font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+width: 204px;
+height: 29px;
+}
+.center{
+  width: 300px;
+  color: black;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.partners{
+margin-top: 50px;
+margin-bottom: 50px;
+height: 40px;
+font-weight: 700;
+font-size: 32px;
+line-height: 39px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+}
+.three-slick{
+  padding-left: 50px;
+
+}
+.abb{
+  position: relative;
+}
